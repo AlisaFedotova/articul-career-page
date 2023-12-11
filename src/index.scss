@@ -1,0 +1,76 @@
+$color-primary: #c31e54;
+$color-dark: #303030;
+$color-light: #fff;
+$font-size: 26px;
+
+$page-padding-lg: 60px;
+$page-padding-md: 33px;
+$page-padding-sm: 16px;
+
+@font-face {
+  font-family: Articul;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./fonts/Articul-Medium.1e29ac4c.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Articul;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Articul.542bbe19.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DrukWide;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./fonts/DrukWideCyr-Medium.8982444d.woff2) format("woff2");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: $color-light;
+  font-family: Articul, Arial, sans-serif;
+  font-size: $font-size;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  padding: 0 $page-padding-lg;
+  max-width: 1920px - $page-padding-lg;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 1220px) {
+  .page-wrapper {
+    padding: 0 $page-padding-md;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 0 $page-padding-sm;
+  }
+}

@@ -1,0 +1,52 @@
+$font-size-lg: clamp(52px, 6.77vw, 130px);
+$font-size-md: 70.5px;
+$font-size-sm: 52px;
+$size-lg: clamp(136px, 18.22vw, 350px);
+$size-md: 182px;
+$size-sm: 136px;
+
+.career-count {
+  font-family: DrukWide, Arial, sans-serif;
+  position: relative;
+  width: $size-lg;
+  aspect-ratio: 1;
+
+  &__count {
+    position: absolute;
+    line-height: 1;
+    font-size: $font-size-lg;
+    top: calc(50% - 0.5em);
+    left: calc(50% - 0.5em);
+  }
+
+  &__caption {
+    fill: currentColor;
+    color: $color-primary;
+    height: auto;
+    max-width: 66vmin;
+    transform-origin: center;
+    width: 100%;
+    animation: 30s linear infinite spin;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .career-count {
+    width: $size-md;
+  }
+}
+
+@media (max-width: 360px) {
+  .career-count {
+    width: $size-sm;
+  }
+}

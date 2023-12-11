@@ -1,0 +1,10 @@
+.hand {
+  transform: rotate(-90deg);
+  width: clamp(262px, 26vw, 500px);
+  height: clamp(262px, 26vw, 500px);
+
+  &__item:first-child {
+    transform: rotate(136.52deg);
+    margin: 0px 0 clamp(40px, 4.16vw, 80px) 8px;
+  }
+}

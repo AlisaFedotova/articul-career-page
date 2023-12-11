@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+
+  &__arrow {
+    width: 400px;
+    height: 360px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    &__item {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(60%, -280%);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(50%, 230%);
+      }
+    }
+  }
+  &__description {
+    font-family: DrukWide, Arial, sans-serif;
+    text-transform: uppercase;
+    width: 350px;
+    margin-left: 100px;
+    font-size: 18px;
+    line-height: 1.4;
+
+    &__link {
+      color: $color-light;
+      text-decoration: none;
+      border-bottom: 3px solid $color-light;
+    }
+  }
+}

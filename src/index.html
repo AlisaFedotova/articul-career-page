@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articul career</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="libs/gsap.min.js" defer></script>
+    <script src="index-min.js" defer></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+        <a
+          class="header__close close"
+          href="/"
+          title="Вернуться на главную страницу">
+          <span class="visually-hidden">Вернуться на главную страницу</span>
+          </a>
+        <div class="header__title">
+          <div class="header__logo hand">
+            <div class="hand__item highlited">Удаленка</div>
+            <div class="hand__item highlited">Высокая зарплата</div>
+            <div class="hand__item highlited">Обучение</div>
+            <div class="hand__item highlited">Вечеринки</div>
+            <div class="hand__item highlited">Сильная команда</div>
+          </div>
+          <h1>Карьера</h1>
+          <h1>в&nbsp;Articul</h1>
+        </div>
+        <div class="header__caption">
+          <div class="header__career-count career-count">
+            <div class="career-count__count">5</div>
+            <svg
+              viewBox="0 0 100 100"
+              width="100"
+              height="100"
+              class="career-count__caption"
+            >
+              <defs>
+                <path
+                  id="circle"
+                  d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"
+                />
+              </defs>
+              <text font-size="16">
+                <textPath xlink:href="#circle">открытых вакансий</textPath>
+              </text>
+            </svg>
+          </div>
+          <p>
+            Мы верим, что каждый вновь приходящий обогащает нашу жизнь,
+            привносит свои идеи, свои смыслы, свое настроение, свою уникальность
+          </p>
+        </div>
+      </header>
+      <main id="careers" class="careers">
+        <div class="careers__item accordion active">
+          <p class="careers__title">Middle web designer</p>
+          <button
+            class="btn accordion__btn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsedText"
+            onclick="collapseText(this)"
+          ></button>
+          <div
+            class="careers__item__content career collapse"
+            id="collapsedText"
+          >
+            <div class="career__experience">
+              <span>>6</span><span>лет опыта</span>
+            </div>
+            <p class="career__description">
+              Самостоятельный дизайнер с отличной насмотренностью, который
+              способен без помощи арт-директора решать как базовые дизайн-задачи
+              так и сложные (дизайн лендингов, подач, презентаций и тд.)
+            </p>
+
+            <div class="tabs">
+              <nav class="career__menu">
+                <a
+                  id="career1-tab1"
+                  class="tabs__tab career__tab-header active"
+                  data-tab="1"
+                  >Требования</a
+                >
+                <a
+                  id="career1-tab2"
+                  class="tabs__tab career__tab-header"
+                  data-tab="2"
+                >
+                  Обязанности
+                </a>
+                <a
+                  id="career1-tab2"
+                  class="tabs__tab career__tab-header"
+                  data-tab="3"
+                  >Стек</a
+                >
+              </nav>
+              <div class="career__tab tabs__content">
+                <div
+                  class="career__tab__wrapper active"
+                  data-tab="1"
+                  id="career1-tabcontent1"
+                >
+                  <div class="career__tab__item">
+                    Опыт работы в сфере графики и веба: 6–9 лет и выше
+                  </div>
+                  <div class="career__tab__item">
+                    Понимание проектирования взаимодействия и создания
+                    информационной архитектуры проекта
+                  </div>
+                  <div class="career__tab__item">
+                    Умение декомпозировать задачи, организовывать и
+                    синхронизировать командную работу с другими дизайнерами
+                  </div>
+                  <div class="career__tab__item">
+                    Ответственность, желание развиваться, обучаемость,
+                    перфекционизм, любовь к деталям и минимализму
+                  </div>
+                  <div class="career__tab__item">
+                    Умение при необходимости самостоятельно взаимодействовать в
+                    коммуникации с подрядчиком
+                  </div>
+                  <div class="career__tab__item">
+                    Сильное портфолио с кейсами в сфере
+                    корпоративного/информационного веба
+                  </div>
+                  <div class="career__tab__item">
+                    Умение быстро подобрать нужные референсы из топовых работ в
+                    сфере веба и использовать их в работе
+                  </div>
+                </div>
+                <div
+                  class="career__tab__wrapper"
+                  data-tab="2"
+                  id="career1-tabcontent2"
+                >
+                  <div class="career__tab__item">Таб обязанности</div>
+                </div>
+                <div
+                  class="career__tab__wrapper"
+                  data-tab="3"
+                  id="career1-tabcontent3"
+                >
+                  <div class="career__tab__item">Таб стек</div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="career__button">icon Откликнуться</a>
+          </div>
+        </div>
+        <div class="careers__item">
+          <p class="careers__title">Системный аналитик</p>
+        </div>
+        <div class="careers__item">
+          <p class="careers__title">IT sales manager</p>
+        </div>
+        <div class="careers__item">
+          <p class="careers__title">Head of marketing & PR</p>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__arrow">
+          <div class="footer__arrow__item highlited">просто вы</div>
+          <div class="footer__arrow__item highlited">Я точно нужен вам,</div>
+          <div class="footer__arrow__item highlited">пока Не знаете</div>
+        </div>
+        <div class="footer__description">
+          Если вы хотите стать частью нашей команды, но не нашли подходящую
+          вакансию в списке выше, то
+          <a class="footer__description__link" href="#" target="_blank"
+            >напишите нам</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

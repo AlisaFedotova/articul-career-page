@@ -1,0 +1,16 @@
+.careers {
+  &__title {
+    font-family: DrukWide, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 20px 0;
+    border-top: 3px solid $color-light;
+  }
+
+  &__item {
+    &__content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+}

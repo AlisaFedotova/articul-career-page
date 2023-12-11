@@ -1,0 +1,17 @@
+.highlited {
+  font-family: DrukWide, Arial, sans-serif;
+  width: fit-content;
+  font-size: clamp(10.7px, 1.16vw, 22.3px);
+  border: 3px solid $color-primary;
+  border-radius: 30px;
+  padding: clamp(8px, 0.93vw, 18px);
+  margin: clamp(8px, 0.78vw, 15px);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 360px) {
+  .highlited {
+    border-width: 2px;
+  }
+}
