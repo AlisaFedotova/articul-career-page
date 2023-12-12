@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1220px) {
   .header {
     &__title {
       justify-content: center;
@@ -62,7 +62,6 @@
       margin-left: 0;
     }
     &__caption {
-      max-width: none;
       gap: 20px;
     }
   }
@@ -95,6 +94,8 @@
 
 @media (max-width: 600px) {
   .header {
+    margin-bottom: 45px;
+
     &__caption {
       font-size: 16px;
       align-items: flex-end;

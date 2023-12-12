@@ -4,22 +4,30 @@ $tab-item-margin: 20px;
   position: relative;
   padding: 70px 0;
 
+  &__body {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
   &__experience {
     display: flex;
     flex-direction: column;
     line-height: 0.7;
     position: absolute;
-    left: -100px;
+    left: 0;
+    font-size: clamp(20px, 1.19vw, 23px);
 
     span {
       &:first-child {
-        font-size: 70px;
+        margin-bottom: 1.56vw;
+        font-size: 5.4em;
       }
     }
   }
 
   &__description {
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 130%;
   }
 
   &__menu {
@@ -31,9 +39,10 @@ $tab-item-margin: 20px;
   &__tab-header {
     font-family: DrukWide, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 22px;
     line-height: 2;
     color: rgba($color-light, 0.8);
+    letter-spacing: 0.44px;
 
     &.active,
     &:hover,
@@ -47,16 +56,15 @@ $tab-item-margin: 20px;
     &__wrapper {
       display: flex;
       flex-wrap: wrap;
-      margin-left: -$tab-item-margin;
-      margin-right: -$tab-item-margin;
+      justify-content: space-between;
+      gap: 20px;
     }
 
     &__item {
       max-width: calc(50% - $tab-item-margin * 2);
-      padding: 20px 0;
+      padding: 24px 0;
       color: rgba($color-light, 0.8);
       border-top: 2px solid $color-dark;
-      margin: 0 $tab-item-margin;
       width: 100%;
     }
   }
@@ -72,5 +80,47 @@ $tab-item-margin: 20px;
     padding: 20px;
     border-radius: 30px;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .career {
+    &__experience {
+      position: relative;
+    }
+
+    &__description {
+      font-size: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+
+      p {
+        max-width: 336px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .career {
+    &__body {
+      max-width: none;
+    }
+
+    &__experience {
+      font-size: clamp(16px, 2.6vw, 20px);
+    }
+  }
+}
+@media (max-width: 360px) {
+  .career {
+    &__description {
+      font-size: 22px;
+      p {
+        max-width: none;
+      }
+    }
   }
 }

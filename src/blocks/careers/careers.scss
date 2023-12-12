@@ -2,15 +2,28 @@
   &__title {
     font-family: DrukWide, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 40px;
-    padding: 20px 0;
-    border-top: 3px solid $color-light;
+    font-size: clamp(40px, 3.64vw, 70px);
+    padding-top: 33px;
+    padding-bottom: 33px;
+    border: 3px solid $color-light;
+    border-left: 0;
+    border-right: 0;
   }
+}
 
-  &__item {
-    &__content {
-      max-width: 600px;
-      margin: 0 auto;
+@media (max-width: 768px) {
+  .careers {
+    &__title {
+      font-size: clamp(20px, 8.54vw, 40px);
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .careers {
+    &__title {
+      padding-top: 17px;
+      padding-bottom: 17px;
     }
   }
 }
