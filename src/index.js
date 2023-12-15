@@ -1,5 +1,3 @@
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
 function collapseText(btn) {
     let target = document.querySelector(btn.dataset.target);
     console.log(target,'target');
@@ -8,6 +6,12 @@ function collapseText(btn) {
         const isShown = target.classList.contains('show');
         target.classList.toggle('show', !isShown);
         target.classList.toggle('collapse', isShown);
+
+        if (target.style.maxHeight) {
+            target.style.maxHeight = null;
+          } else {
+            target.style.maxHeight = target.scrollHeight + "px";
+          }
     }
 }
 
@@ -36,9 +40,3 @@ tabs.forEach(tab => {
         activateTab(tab.dataset.tab);
     })
 })
-
-// const opentab = JSON.parse(localStorage.getItem('jstabs-opentab')) || '1';
-
-// console.log(opentab,'opentab');
-
-// activateTab(opentab);
