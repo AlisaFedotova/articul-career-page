@@ -1,42 +1,49 @@
-function collapseText(btn) {
-    let target = document.querySelector(btn.dataset.target);
-    console.log(target,'target');
-
+function collapse(accordion) {
+    accordion.classList.toggle("collapsed");
+    let target = document.querySelector(accordion.dataset.target);
+  
     if (target) {
-        const isShown = target.classList.contains('show');
-        target.classList.toggle('show', !isShown);
-        target.classList.toggle('collapse', isShown);
-
-        if (target.style.maxHeight) {
-            target.style.maxHeight = null;
-          } else {
-            target.style.maxHeight = target.scrollHeight + "px";
-          }
+      const isCollapsed = target.classList.contains("collapsed");
+      target.classList.toggle("collapsed", !isCollapsed);
+  
+      if (target.style.maxHeight) {
+        target.style.maxHeight = null;
+      } else {
+        target.style.maxHeight = target.scrollHeight + "px";
+      }
     }
-}
+  }
+  
 
 /* TABS */
-const tabs = document.querySelectorAll('.tabs__tab');
-const tabContents = document.querySelectorAll('.tabs__content-item');
+function init() {
+    const tabs = document.querySelector('.tabs');
+    const tabArray = document.querySelectorAll('.tabs__link');
+    const tabContents = document.querySelectorAll('.tabs__pane');
 
-const activateTab = tabnum => {
+    const activateTab = tabnum => {
+        tabArray.forEach(tab => {
+            tab.classList.remove('active');
+        })
 
-    tabs.forEach(tab => {
-        tab.classList.remove('active');
-    })
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active');
+        })
 
-    tabContents.forEach(tabContent => {
-        tabContent.classList.remove('active');
-    })
+        document.querySelector('#tab' + tabnum).classList.add('active');
+        document.querySelector('#tabcontent' + tabnum).classList.add('active');
+    }
 
-    document.querySelector('#tab' + tabnum).classList.add('active');
-    document.querySelector('#tabcontent' + tabnum).classList.add('active');
-    localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
+    tabs.onclick = function (event) {
+        let target = event.target;
 
+        if (target.classList.contains('tabs__link')) {
+            activateTab(target.dataset.tab);
+        }
+    }
+
+    const opentab = '1';
+    activateTab(opentab);
 }
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        activateTab(tab.dataset.tab);
-    })
-})
+window.addEventListener('DOMContentLoaded', init);

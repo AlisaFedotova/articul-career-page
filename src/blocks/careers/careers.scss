@@ -2,12 +2,9 @@
   &__title {
     font-family: DrukWide, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: clamp(40px, 3.64vw, 70px);
+
     padding-top: 33px;
     padding-bottom: 33px;
-    border: 3px solid $color-light;
-    border-left: 0;
-    border-right: 0;
   }
 }
 
