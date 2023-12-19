@@ -61,197 +61,206 @@
           </p>
         </div>
       </header>
-      <div class="accordion careers" id="accordion">
-        <div class="accordion__item">
-          <h2 class="accordion__header">
-            <button
-              class="btn accordion__btn careers__title collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapsedText1"
-              onclick="collapse(this)"
-            >
-              Accordion item 1
-            </button>
-          </h2>
-          <div class="accordion__collapse collapsed" id="collapsedText1">
-            <div class="accordion__body">выпиыви</div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <h2 class="accordion__header">
-            <button
-              class="btn accordion__btn careers__title collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapsedText2"
-              onclick="collapse(this)"
-            >
-              Accordion item 2
-            </button>
-          </h2>
-          <div class="accordion__collapse collapsed" id="collapsedText2">
-            <div class="accordion__body">
-              Amet maiores nihil ut rerum quia, voluptate aut quae accusantium
-              dolor error expedita neque officia incidunt aliquam modi maxime
-              tenetur, officiis esse ea iste deserunt inventore cum. Sunt,
-              sapiente doloremque cumque ratione dignissimos totam temporibus
-              quasi facilis beatae asperiores? Quisquam, aperiam inventore
-              dolorum enim quidem cumque veritatis.
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <h2 class="accordion__header">
-            <button
-              class="btn accordion__btn careers__title collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapsedText3"
-              onclick="collapse(this)"
-            >
-              Accordion item 3
-            </button>
-          </h2>
-          <div class="accordion__collapse collapsed" id="collapsedText3">
-            <div class="accordion__body">
-              Quas, in. Eveniet eligendi rem, deleniti eos aspernatur fugit
-              doloribus minima, illo ipsum facilis itaque inventore quas tenetur
-              quam id nulla blanditiis aut quibusdam. Quia nobis velit totam
-              aliquam ut sed tempora magnam beatae, voluptatibus eos
-            </div>
-          </div>
-        </div>
-      </div>
       <main id="careers" class="careers">
-        <div class="careers__item accordion active">
-          <div class="careers__title accordion__title">
-            Middle web designer
-            <button
-              class="btn accordion__btn"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapsedText"
-              onclick="collapseText(this)"
-            ></button>
-          </div>
-          <div
-            class="careers__item__content career collapse"
-            id="collapsedText"
-          >
-            <div class="career__body">
-              <div class="career__description">
-                <div class="career__experience">
-                  <span>>6</span><span>лет опыта</span>
+        <div class="accordion careers" id="accordion">
+          <div class="accordion__item">
+            <h2 class="accordion__header">
+              <button
+                class="btn accordion__btn careers__title collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsedText1"
+                onclick="collapse(this)"
+              >
+                Middle web designer
+              </button>
+            </h2>
+            <div class="accordion__collapse job collapsed" id="collapsedText1">
+              <div class="accordion__body job__body">
+                <div class="job__description">
+                  <div class="job__experience">
+                    <span>>6</span><span>лет опыта</span>
+                  </div>
+                  <p>
+                    Самостоятельный дизайнер с отличной насмотренностью, который
+                    способен без помощи арт-директора решать как базовые
+                    дизайн-задачи так и сложные (дизайн лендингов, подач,
+                    презентаций и тд.)
+                  </p>
                 </div>
-                <p>
-                  Самостоятельный дизайнер с отличной насмотренностью, который
-                  способен без помощи арт-директора решать как базовые
-                  дизайн-задачи так и сложные (дизайн лендингов, подач,
-                  презентаций и тд.)
-                </p>
-              </div>
-
-              <div class="tabs">
-                <nav class="career__menu">
-                  <a
-                    id="career1-tab1"
-                    class="tabs__tab career__tab-header active"
-                    data-tab="1"
-                    >Требования</a
-                  >
-                  <a
-                    id="career1-tab2"
-                    class="tabs__tab career__tab-header"
-                    data-tab="2"
-                  >
-                    Обязанности
+                <div class="tabs job__tabs" id="tabs">
+                  <nav class="tabs__nav job__tabs__nav">
+                    <a id="tab1" class="tabs__link job__tabs__link" data-tab="1"
+                      >Требования</a
+                    >
+                    <a id="tab2" class="tabs__link job__tabs__link" data-tab="2"
+                      >Обязанности</a
+                    >
+                    <a id="tab3" class="tabs__link job__tabs__link" data-tab="3"
+                      >Стек</a
+                    >
+                  </nav>
+                  <div class="tabs__content">
+                    <div
+                      class="tabs__pane job__qualification"
+                      data-tab="1"
+                      id="tabcontent1"
+                    >
+                      <div class="job__qualification__item">
+                        Опыт работы в сфере графики и веба: 6–9 лет и выше
+                      </div>
+                      <div class="job__qualification__item">
+                        Понимание проектирования взаимодействия и создания
+                        информационной архитектуры проекта
+                      </div>
+                      <div class="job__qualification__item">
+                        Умение декомпозировать задачи, организовывать и
+                        синхронизировать командную работу с другими дизайнерами
+                      </div>
+                      <div class="job__qualification__item">
+                        Ответственность, желание развиваться, обучаемость,
+                        перфекционизм, любовь к деталям и минимализму
+                      </div>
+                      <div class="job__qualification__item">
+                        Умение при необходимости самостоятельно
+                        взаимодействовать в коммуникации с подрядчиком
+                      </div>
+                      <div class="job__qualification__item">
+                        Сильное портфолио с кейсами в сфере
+                        корпоративного/информационного веба
+                      </div>
+                      <div class="job__qualification__item">
+                        Умение быстро подобрать нужные референсы из топовых
+                        работ в сфере веба и использовать их в работе
+                      </div>
+                    </div>
+                    <div
+                      class="tabs__pane job__qualification"
+                      data-tab="2"
+                      id="tabcontent2"
+                    >
+                      <div class="job__qualification__item">
+                        Создавать концепцию, продумывать структуры и функционал
+                        продукта
+                      </div>
+                      <div class="job__qualification__item">
+                        Заниматься проектированием и дизайном интерфейсов,
+                        подготовкой рабочих макетов для передачи в команду
+                        разработки
+                      </div>
+                      <div class="job__qualification__item">
+                        Выполнять работы по дизайну и проектированию веб-и
+                        мобильных интерфейсов
+                      </div>
+                      <div class="job__qualification__item">
+                        Заниматься доработкой проектов
+                      </div>
+                      <div class="job__qualification__item">
+                        Работать с фотоматериалами, с иллюстрациями, обработкой,
+                        коллажированием., пиктограммами, другой графикой
+                      </div>
+                    </div>
+                    <div
+                      class="tabs__pane job__qualification"
+                      data-tab="3"
+                      id="tabcontent3"
+                    >
+                      <div class="job__qualification__item">Figma</div>
+                      <div class="job__qualification__item">Ai</div>
+                      <div class="job__qualification__item">
+                        3d редакторы (оптимально Blender)
+                      </div>
+                      <div class="job__qualification__item">Ps</div>
+                      <div class="job__qualification__item">AE</div>
+                      <div class="job__qualification__item">webflow</div>
+                    </div>
+                  </div>
+                  <a href="#" class="button job__button">
+                    <svg
+                      class="job__button__icon"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="popular_mail-envelope-b-f 1">
+                        <path
+                          id="Vector"
+                          d="M2.50085 5.00018V7.59643L15.0009 14.8147L27.5009 7.59643V5.00018H2.50085ZM2.50085 10.4837V25.0002H27.5009V10.4837L15.0009 17.7002L2.50085 10.4837Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                    <span>Откликнуться</span>
                   </a>
-                  <a
-                    id="career1-tab2"
-                    class="tabs__tab career__tab-header"
-                    data-tab="3"
-                    >Стек</a
-                  >
-                </nav>
-                <div class="career__tab tabs__content">
-                  <div
-                    class="career__tab__wrapper active"
-                    data-tab="1"
-                    id="career1-tabcontent1"
-                  >
-                    <div class="career__tab__item">
-                      Опыт работы в сфере графики и веба: 6–9 лет и выше
-                    </div>
-                    <div class="career__tab__item">
-                      Понимание проектирования взаимодействия и создания
-                      информационной архитектуры проекта
-                    </div>
-                    <div class="career__tab__item">
-                      Умение декомпозировать задачи, организовывать и
-                      синхронизировать командную работу с другими дизайнерами
-                    </div>
-                    <div class="career__tab__item">
-                      Ответственность, желание развиваться, обучаемость,
-                      перфекционизм, любовь к деталям и минимализму
-                    </div>
-                    <div class="career__tab__item">
-                      Умение при необходимости самостоятельно взаимодействовать
-                      в коммуникации с подрядчиком
-                    </div>
-                    <div class="career__tab__item">
-                      Сильное портфолио с кейсами в сфере
-                      корпоративного/информационного веба
-                    </div>
-                    <div class="career__tab__item">
-                      Умение быстро подобрать нужные референсы из топовых работ
-                      в сфере веба и использовать их в работе
-                    </div>
-                  </div>
-                  <div
-                    class="career__tab__wrapper"
-                    data-tab="2"
-                    id="career1-tabcontent2"
-                  >
-                    <div class="career__tab__item">Таб обязанности</div>
-                  </div>
-                  <div
-                    class="career__tab__wrapper"
-                    data-tab="3"
-                    id="career1-tabcontent3"
-                  >
-                    <div class="career__tab__item">Таб стек</div>
-                  </div>
                 </div>
               </div>
-              <a href="#" class="career__button">
-                <svg
-                  class="career__button__icon"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="popular_mail-envelope-b-f 1">
-                    <path
-                      id="Vector"
-                      d="M2.50085 5.00018V7.59643L15.0009 14.8147L27.5009 7.59643V5.00018H2.50085ZM2.50085 10.4837V25.0002H27.5009V10.4837L15.0009 17.7002L2.50085 10.4837Z"
-                      fill="white"
-                    />
-                  </g>
-                </svg>
-                <span>Откликнуться</span>
-              </a>
             </div>
           </div>
-        </div>
-        <div class="careers__item">
-          <p class="careers__title">Системный аналитик</p>
-        </div>
-        <div class="careers__item">
-          <p class="careers__title">IT sales manager</p>
-        </div>
-        <div class="careers__item">
-          <p class="careers__title">Head of marketing & PR</p>
+          <div class="accordion__item">
+            <h2 class="accordion__header">
+              <button
+                class="btn accordion__btn careers__title collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsedText2"
+                onclick="collapse(this)"
+              >
+                Системный аналитик
+              </button>
+            </h2>
+            <div class="accordion__collapse collapsed" id="collapsedText2">
+              <div class="accordion__body">
+                Amet maiores nihil ut rerum quia, voluptate aut quae accusantium
+                dolor error expedita neque officia incidunt aliquam modi maxime
+                tenetur, officiis esse ea iste deserunt inventore cum. Sunt,
+                sapiente doloremque cumque ratione dignissimos totam temporibus
+                quasi facilis beatae asperiores? Quisquam, aperiam inventore
+                dolorum enim quidem cumque veritatis.
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 class="accordion__header">
+              <button
+                class="btn accordion__btn careers__title collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsedText3"
+                onclick="collapse(this)"
+              >
+                IT sales manager
+              </button>
+            </h2>
+            <div class="accordion__collapse collapsed" id="collapsedText3">
+              <div class="accordion__body">
+                Quas, in. Eveniet eligendi rem, deleniti eos aspernatur fugit
+                doloribus minima, illo ipsum facilis itaque inventore quas
+                tenetur quam id nulla blanditiis aut quibusdam. Quia nobis velit
+                totam aliquam ut sed tempora magnam beatae, voluptatibus eos
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 class="accordion__header">
+              <button
+                class="btn accordion__btn careers__title collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsedText4"
+                onclick="collapse(this)"
+              >
+                Head of marketing & PR
+              </button>
+            </h2>
+            <div class="accordion__collapse collapsed" id="collapsedText4">
+              <div class="accordion__body">
+                Eveniet eligendi rem, deleniti eos aspernatur fugit doloribus
+                minima, illo ipsum facilis itaque inventore quas tenetur quam id
+                nulla blanditiis aut quibusdam. Quia nobis velit totam aliquam
+                ut sed tempora magnam beatae, voluptatibus eos
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <footer class="footer">

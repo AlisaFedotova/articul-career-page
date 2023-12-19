@@ -1,31 +1,37 @@
+$color-text: rgba($color-light, 0.8);
+$color-text-active: $color-light;
+$color-border: $color-text-active;
+$color-bg-animation: rgba(255, 255, 255, 0.1);
+$border-thick: 3px;
+$border: $border-thick solid $color-border;
+$font-size: 16px;
+$transition-duration: 0;
+
 .tabs {
-  &__tab {
-    cursor: pointer;
+  &__link {
+    color: $color-text;
+    cursor: default;
+
+    &.active,
+    &:hover {
+      color: $color-text-active;
+      border-bottom: $border;
+    }
+  }
+
+  &__pane {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background: $color-bg-animation;
+    transition: $transition-duration;
+
+    &.active {
+      position: relative;
+      visibility: visible;
+      background: transparent;
+      opacity: 1;
+      z-index: 5;
+    }
   }
 }
-
-//TABS
-// .tabs {
-//   &__tab.active {
-//     color: red;
-//     border-bottom: 2px solid #00bf78;
-//   }
-
-//   &__content {
-//     position: relative;
-//   }
-
-//   &__content-item {
-//     position: absolute;
-//     opacity: 0;
-//     background: rgba(0, 0, 0, 0.1);
-//     transition: 0.4s;
-
-//     &.active {
-//       background: transparent;
-//       opacity: 1;
-//       z-index: 5;
-//     }
-//   }
-// }
-//\TABS

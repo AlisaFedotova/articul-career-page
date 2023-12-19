@@ -1,12 +1,12 @@
 $tab-item-margin: 20px;
 
-.career {
+.job {
   position: relative;
-  padding: 70px 0;
 
   &__body {
     max-width: 900px;
     margin: 0 auto;
+    padding: 70px 0;
   }
 
   &__experience {
@@ -30,38 +30,31 @@ $tab-item-margin: 20px;
     line-height: 130%;
   }
 
-  &__menu {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 100px 0 90px 0;
-    max-width: 100vw;
-    overflow: auto;
-  }
-
-  &__tab-header {
-    font-family: DrukWide, Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 22px;
-    line-height: 2;
-    color: rgba($color-light, 0.8);
-    letter-spacing: 0.44px;
-
-    &.active,
-    &:hover,
-    &:active {
-      border-bottom: 3px solid rgba($color-light, 0.8);
-      color: $color-light;
-    }
-  }
-
-  &__tab {
-    &__wrapper {
+  &__tabs {
+    &__nav {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
-      gap: 70px;
+      gap: 20px;
+      margin: 100px 0 90px 0;
+      max-width: 100vw;
+      overflow: auto;
     }
+
+    &__link {
+      font-family: DrukWide, Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 22px;
+      line-height: 2;
+      color: rgba($color-light, 0.8);
+      letter-spacing: 0.44px;
+    }
+  }
+
+  &__qualification {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px;
 
     &__item {
       max-width: calc(50% - $tab-item-margin * 2);
@@ -73,20 +66,13 @@ $tab-item-margin: 20px;
   }
 
   &__button {
-    font-family: DrukWide, Arial, sans-serif;
-    font-size: 28px;
-    text-transform: uppercase;
-    width: 100%;
-    display: block;
-    text-align: center;
-    background-color: $color-primary;
-    color: $color-light;
-    padding: 20px;
-    border-radius: 30px;
-    text-decoration: none;
-
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 21px;
+
+    width: 100%;
+    margin-top: 73px;
 
     &__icon {
       width: 30px;
@@ -95,7 +81,7 @@ $tab-item-margin: 20px;
 }
 
 @media (max-width: 1200px) {
-  .career {
+  .job {
     &__experience {
       position: relative;
     }
@@ -115,27 +101,34 @@ $tab-item-margin: 20px;
 }
 
 @media (max-width: 768px) {
-  .career {
+  .job {
     &__body {
       max-width: none;
     }
 
     &__experience {
-      font-size: clamp(16px, 2.6vw, 20px);
+      font-size: clamp(16px, 1.04vw, 20px);
     }
 
-    &__menu {
-      margin: 90px 0 65px 0;
-    }
-
-    &__tab-header {
-      font-size: 18px;
-    }
-
-    &__tab {
-      &__wrapper {
-        gap: 40px;
+    &__tabs {
+      &__nav {
+        margin: 90px 0 65px 0;
       }
+
+      &__link {
+        font-size: 18px;
+      }
+    }
+
+    &__button {
+      gap: 15px;
+      margin-top: 58px;
+      font-size: clamp(13.255px, 0.69vw, 22px);
+      padding: clamp(10px, 0.88vw, 17px);
+    }
+
+    &__qualification {
+      gap: 40px;
 
       &__item {
         font-size: 18px;
@@ -143,31 +136,33 @@ $tab-item-margin: 20px;
     }
   }
 }
+
 @media (max-width: 360px) {
-  .career {
+  .job {
     &__description {
       font-size: 22px;
       p {
         max-width: none;
       }
     }
-    &__menu {
-      margin: 50px 0 40px 0;
-    }
 
-    &__tab-header {
-      font-size: 12px;
+    &__tabs {
+      &__nav {
+        margin: 50px 0 40px 0;
+      }
 
-      &:nth-child(2) {
-        order: 2;
+      &__link {
+        font-size: 12px;
+
+        &:nth-child(2) {
+          order: 2;
+        }
       }
     }
 
-    &__tab {
-      &__wrapper {
-        flex-direction: column;
-        gap: 20px;
-      }
+    &__qualification {
+      flex-direction: column;
+      gap: 20px;
 
       &__item {
         max-width: none;
