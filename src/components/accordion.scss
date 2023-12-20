@@ -37,7 +37,7 @@ $icon-thick-sm: 2px;
     position: relative;
     background-color: transparent;
     border: 0;
-    padding-right: $icon-width + 15px;
+    padding-right: $icon-width * 2;
     width: 100%;
     font-size: $font-size;
 
@@ -80,7 +80,6 @@ $icon-thick-sm: 2px;
   .accordion {
     &__btn {
       font-size: $font-size-md;
-      padding-right: $icon-width-md + 15px;
 
       &:before,
       &:after {
@@ -94,8 +93,9 @@ $icon-thick-sm: 2px;
 
 @media (max-width: 360px) {
   .accordion {
-    padding-right: $icon-width-sm + 10px;
     &__btn {
+      padding-right: $icon-width-sm + 14px;
+
       &:before,
       &:after {
         content: "";
