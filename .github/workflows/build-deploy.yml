@@ -28,8 +28,8 @@ jobs:
 
     - name: Deploy
       run: |
-        git config --local user.email "fedotova.alisav@gmail.com"
-        git config --local user.name "AlisaFedotova"
+        git config --global user.email "fedotova.alisav@gmail.com"
+        git config --global user.name "AlisaFedotova"
         git checkout -b gh-pages
         git add -f dist
         git commit -m "Deploy to GitHub Pages"
