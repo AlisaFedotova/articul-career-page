@@ -13,4 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - run: npm install && gulp serve
+    - run: npm install
+
+    - run: gulp build
