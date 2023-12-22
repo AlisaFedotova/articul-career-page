@@ -30,7 +30,7 @@ jobs:
            git config user.name AlisaFedotova
            git switch --orphan gh-pages
            mv dist/* ./
-           rm dist
+           rm -rf dist
            git add -f .
            git commit -m "Deploy to GitHub Pages"
            git push origin gh-pages --force
