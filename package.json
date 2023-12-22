@@ -1,16 +1,19 @@
 {
-  "name": "portfolio-fedotova-alisa",
+  "name": "articul-career-page",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Webpage test project",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "gulp serve",
+    "start": "gulp serve",
     "build": "gulp build"
   },
-  "author": "",
+  "author": {
+    "name": "Alisa Fedotova",
+    "email": "fedotova.alisav@gmail.com",
+    "url": "https://github.com/AlisaFedotova"
+  },
   "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.4.12",
+  "dependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
