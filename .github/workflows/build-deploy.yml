@@ -28,7 +28,7 @@ jobs:
       run: |
            git config user.email fedotova.alisav@gmail.com
            git config user.name AlisaFedotova
-           git switch --orphan -f gh-pages
+           git switch --orphan gh-pages -f
            mv dist/* ./
            rm -rf dist
            git add -f .
