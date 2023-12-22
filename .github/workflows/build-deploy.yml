@@ -28,10 +28,10 @@ jobs:
       run: |
            git config user.email fedotova.alisav@gmail.com
            git config user.name AlisaFedotova
-           git checkout -b gh-pages
+           git checkout --orphan gh-pages
            git add -f dist
            git commit -m "Deploy to GitHub Pages"
-           git push gh-pages --force
+           git push origin gh-pages --force
       env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
