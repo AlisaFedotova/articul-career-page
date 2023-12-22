@@ -29,7 +29,9 @@ jobs:
            git config user.email fedotova.alisav@gmail.com
            git config user.name AlisaFedotova
            git switch --orphan gh-pages
-           git add -f dist
+           mv dist/* ./
+           rm dist
+           git add -f .
            git commit -m "Deploy to GitHub Pages"
            git push origin gh-pages --force
       env:
