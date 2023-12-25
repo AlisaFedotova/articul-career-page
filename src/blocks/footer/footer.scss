@@ -36,9 +36,24 @@
     font-size: clamp(25px, 1.82vw, 35px);
 
     &__link {
-      color: $color-light;
       text-decoration: none;
-      border-bottom: 3px solid $color-light;
+      color: $color-light;
+      padding-bottom: 7px;
+      background: linear-gradient(to right, $color-light, $color-light),
+        linear-gradient(
+          to right,
+          rgba(255, 0, 0, 1),
+          rgba(255, 0, 180, 1),
+          rgba(0, 100, 200, 1)
+        );
+      background-size: 100% 3px, 0 3px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.3s;
+
+      &:hover {
+        background-size: 0 3px, 100% 3px;
+      }
     }
   }
 }

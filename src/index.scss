@@ -71,10 +71,12 @@ body {
   text-decoration: none;
   letter-spacing: 0.44px;
 
+  cursor: default;
+
   padding: 20px;
   border-radius: 50px;
   transition: all 0.5s;
-  
+
   position: relative;
 
   &::before {
