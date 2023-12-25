@@ -6,6 +6,7 @@
     position: fixed;
     top: 59px;
     right: 49px;
+    z-index: 100;
   }
 
   &__logo {
@@ -86,8 +87,8 @@
       }
     }
     &__close {
-      top: 33px;
-      right: 33px;
+      top: 5dvh;
+      right: 5dvh;
     }
   }
 }
@@ -112,8 +113,8 @@
 @media (max-width: 360px) {
   .header {
     &__close {
-      top: 16px;
-      right: 16px;
+      top: 4dvh;
+      right: 4dvh;
     }
   }
 }

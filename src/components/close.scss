@@ -9,17 +9,6 @@ $hover-color: #c31e54;
   width: 90px;
   aspect-ratio: 1;
 
-  &:hover {
-    &::before {
-      background-color: $hover-color;
-      transform: rotate(-135deg);
-    }
-    &::after {
-      background-color: $hover-color;
-      transform: rotate(135deg);
-    }
-  }
-
   &::before {
     content: "";
     display: block;
@@ -41,6 +30,20 @@ $hover-color: #c31e54;
     transition: all 0.3s ease-out;
     position: absolute;
     top: calc(50% - $line-width-lg / 2);
+  }
+}
+
+@media (hover: hover) {
+  .close:hover {
+    &::before {
+      background-color: $hover-color;
+      transform: rotate(-135deg);
+    }
+    
+    &::after {
+      background-color: $hover-color;
+      transform: rotate(135deg);
+    }
   }
 }
 
