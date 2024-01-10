@@ -10,7 +10,7 @@ $hover-color: #c31e54;
   aspect-ratio: 1;
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: $line-width-lg;
@@ -21,7 +21,7 @@ $hover-color: #c31e54;
     top: calc(50% - $line-width-lg / 2);
   }
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: $line-width-lg;
@@ -39,7 +39,7 @@ $hover-color: #c31e54;
       background-color: $hover-color;
       transform: rotate(-135deg);
     }
-    
+
     &::after {
       background-color: $hover-color;
       transform: rotate(135deg);

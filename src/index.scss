@@ -11,7 +11,7 @@ $page-padding-sm: 16px;
   font-family: Articul;
   font-style: normal;
   font-weight: 500;
-  src: url(./fonts/Articul-Medium.1e29ac4c.woff2) format("woff2");
+  src: url(./fonts/Articul-Medium.1e29ac4c.woff2) format('woff2');
   font-display: swap;
 }
 
@@ -19,7 +19,7 @@ $page-padding-sm: 16px;
   font-family: Articul;
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/Articul.542bbe19.woff2) format("woff2");
+  src: url(./fonts/Articul.542bbe19.woff2) format('woff2');
   font-display: swap;
 }
 
@@ -27,7 +27,7 @@ $page-padding-sm: 16px;
   font-family: DrukWide;
   font-style: normal;
   font-weight: 500;
-  src: url(./fonts/DrukWideCyr-Medium.8982444d.woff2) format("woff2");
+  src: url(./fonts/DrukWideCyr-Medium.8982444d.woff2) format('woff2');
   font-display: swap;
 }
 
@@ -80,7 +80,7 @@ body {
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -93,7 +93,7 @@ body {
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;

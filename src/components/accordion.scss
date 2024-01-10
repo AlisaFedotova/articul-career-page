@@ -47,7 +47,7 @@ $icon-thick-sm: 2px;
 
     &:before,
     &:after {
-      content: "";
+      content: '';
       height: $icon-thick;
       width: $icon-width;
       background-color: $color-icon;
@@ -83,7 +83,7 @@ $icon-thick-sm: 2px;
 
       &:before,
       &:after {
-        content: "";
+        content: '';
         height: $icon-thick-md;
         width: $icon-width-md;
       }
@@ -98,7 +98,7 @@ $icon-thick-sm: 2px;
 
       &:before,
       &:after {
-        content: "";
+        content: '';
         height: $icon-thick-sm;
         width: $icon-width-sm;
       }
