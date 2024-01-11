@@ -9,7 +9,7 @@ function collapse(accordion) {
     if (target.style.maxHeight) {
       target.style.maxHeight = null;
     } else {
-      target.style.maxHeight = `${target.scrollHeight} + px`;
+      target.style.maxHeight = `${target.scrollHeight}px`;
     }
   }
 }
@@ -17,38 +17,44 @@ function collapse(accordion) {
 function init() {
   /* TABS */
 
-  // const tabs = document.querySelector('.tabs');
-  // const tabArray = document.querySelectorAll('.tabs__link');
-  // const tabContents = document.querySelectorAll('.tabs__pane');
+  const tabsList = document.querySelectorAll('.tabs');
 
-  // const activateTab = (tabnum) => {
-  //   tabArray.forEach((tab) => {
-  //     tab.classList.remove('active');
-  //   });
+  const activateTab = (tabs, tabNum) => {
+    const linkList = tabs.querySelectorAll('.tabs__link');
+    const paneList = tabs.querySelectorAll('.tabs__pane');
 
-  //   tabContents.forEach((tabContent) => {
-  //     tabContent.classList.remove('active');
-  //   });
+    linkList.forEach((link) => {
+      link.classList.remove('active');
+    });
 
-  //   document.querySelector('#tab' + tabnum).classList.add('active');
-  //   document.querySelector('#tabcontent' + tabnum).classList.add('active');
-  // };
+    paneList.forEach((pane) => {
+      pane.classList.remove('active');
+    });
 
-  // tabs.onclick = function (event) {
-  //   let target = event.target;
+    tabs.querySelector(`#tab${tabNum}`).classList.add('active');
+    tabs.querySelector(`#tabcontent${tabNum}`).classList.add('active');
+  };
 
-  //   if (target.classList.contains('tabs__link')) {
-  //     activateTab(target.dataset.tab);
-  //   }
-  // };
+  tabsList.forEach((tabs) => {
+    const contentList = tabs.querySelectorAll('.tabs__pane');
 
-  // const opentab = '1';
-  // activateTab(opentab);
+    if (contentList.length > 0) {
+      activateTab(tabs, contentList.item(0).dataset.tab);
+    }
+
+    tabs.onclick = function (event) {
+      const { target } = event;
+
+      if (target.classList.contains('tabs__link')) {
+        activateTab(tabs, target.dataset.tab);
+      }
+    };
+  });
 
   /* CAREER COUNT */
   const count = document.querySelector('#career-count');
   const accordion = document.querySelector('#accordion');
-  if (accordion) {
+  if (count && accordion) {
     count.dataset.count = accordion.childNodes.length;
   } else {
     count.dataset.count = 0;
